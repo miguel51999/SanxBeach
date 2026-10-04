@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>SanxBeach – Alquiler</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Figtree',system-ui,sans-serif;}
+a{text-decoration:none;}
+input::placeholder{color:#44474E;opacity:1;}
+input:focus{outline:none;}
+</style>
+</helmet>
+<div style="position:relative;width:390px;height:1110px;box-sizing:border-box;padding:28px 20px 32px;display:flex;flex-direction:column;gap:20px;background:#F9F9FF;color:#191C20;font-family:'Figtree',system-ui,sans-serif;overflow:hidden">
+
+  <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:48px;position:relative;z-index:5">
+    <a href="Main.dc.html" aria-label="Volver al inicio" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:22px;background:#E7E8EE;justify-self:start">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#191C20" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg>
+    </a>
+    <a href="Main.dc.html" aria-label="SanxBeach, inicio" style="font-size:28px;font-weight:800;letter-spacing:-0.5px;color:#415F91;line-height:1">Sanx<span style="color:#006874">Beach</span></a>
+    <div style="position:relative;justify-self:end">
+      <button onClick="{{toggleMenu}}" aria-expanded="{{menuOpen}}" aria-haspopup="true" style="display:flex;align-items:center;gap:8px;height:44px;padding:0 14px 0 16px;border:1px solid #74777F;border-radius:22px;background:#F9F9FF;color:#191C20;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer">
+        Menú
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#44474E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="transform:{{chevRot}};transition:transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;right:0;top:52px;width:200px;box-sizing:border-box;padding:8px;display:flex;flex-direction:column;gap:2px;background:#F3F3FA;border:1px solid #C4C6D0;border-radius:16px;box-shadow:0 6px 20px rgba(25,28,32,0.14)">
+          <a href="Main.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Inicio</a>
+          <a href="Clases.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Clases</a>
+          <a href="Alquiler.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;background:#D6E3FF;color:#284777;font-weight:700;font-size:15px">Alquiler</a>
+          <a href="Conocenos.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Conócenos</a>
+          <a href="Contactanos.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Contáctanos</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:12px;height:52px;box-sizing:border-box;padding:0 18px;border-radius:26px;background:#E7E8EE;flex-shrink:0">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#44474E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+    <input type="search" aria-label="Buscar artículos de alquiler" placeholder="Buscar artículos" onInput="{{onSearch}}" style="flex:1;min-width:0;height:100%;border:0;background:transparent;font-family:inherit;font-size:16px;color:#191C20">
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:20px">
+    <div style="display:{{d0}};flex-direction:column;border:1px solid #C4C6D0;border-radius:24px;background:#F3F3FA;overflow:hidden">
+      <div style="height:168px">
+        <svg viewBox="0 0 350 168" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Tabla de surf" role="img">
+          <rect width="350" height="168" fill="#D6E3FF"></rect>
+          <circle cx="175" cy="84" r="68" fill="#FFFFFF"></circle>
+          <g transform="rotate(62 175 84)">
+            <path d="M175 10 C207 42 207 126 175 158 C143 126 143 42 175 10Z" fill="#006874"></path>
+            <path d="M175 26 V142" stroke="#9EEFFD" stroke-width="5" stroke-linecap="round"></path>
+            <path d="M163 140 L175 130 L187 140" fill="none" stroke="#9EEFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;padding:16px">
+        <div style="font-size:22px;font-weight:800;color:#191C20;line-height:1.15">Tabla de surf</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <div style="font-size:16px;font-weight:700;color:#006874;white-space:nowrap">8 <span style="font-weight:500;color:#44474E">€/hora</span></div>
+          <div style="display:flex;gap:8px">
+            <a href="Detalle-Surf.dc.html" style="display:flex;align-items:center;height:44px;padding:0 20px;box-sizing:border-box;border-radius:22px;background:#D6E3FF;color:#284777;font-size:15px;font-weight:700">Ver</a>
+            <a href="Alquilar.dc.html" style="display:flex;align-items:center;height:44px;padding:0 20px;box-sizing:border-box;border-radius:22px;background:#006874;color:#FFFFFF;font-size:15px;font-weight:700">Alquilar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:{{d1}};flex-direction:column;border:1px solid #C4C6D0;border-radius:24px;background:#F3F3FA;overflow:hidden">
+      <div style="height:168px">
+        <svg viewBox="0 0 350 168" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Tabla de paddle surf con remo" role="img">
+          <rect width="350" height="168" fill="#9EEFFD"></rect>
+          <circle cx="175" cy="84" r="68" fill="#FFFFFF"></circle>
+          <path d="M34 96 C70 66 250 66 316 96 C250 126 70 126 34 96Z" fill="#415F91"></path>
+          <rect x="120" y="88" width="110" height="16" rx="8" fill="#D6E3FF"></rect>
+          <path d="M72 22 L270 132" stroke="#191C20" stroke-width="6" stroke-linecap="round"></path>
+          <path d="M62 14 L82 24" stroke="#191C20" stroke-width="6" stroke-linecap="round"></path>
+          <ellipse cx="284" cy="140" rx="9" ry="20" transform="rotate(-61 284 140)" fill="#191C20"></ellipse>
+        </svg>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;padding:16px">
+        <div style="font-size:22px;font-weight:800;color:#191C20;line-height:1.15">Tabla de paddle surf</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <div style="font-size:16px;font-weight:700;color:#006874;white-space:nowrap">12 <span style="font-weight:500;color:#44474E">€/hora</span></div>
+          <div style="display:flex;gap:8px">
+            <a href="Detalle-Paddle.dc.html" style="display:flex;align-items:center;height:44px;padding:0 20px;box-sizing:border-box;border-radius:22px;background:#D6E3FF;color:#284777;font-size:15px;font-weight:700">Ver</a>
+            <a href="Alquilar.dc.html" style="display:flex;align-items:center;height:44px;padding:0 20px;box-sizing:border-box;border-radius:22px;background:#006874;color:#FFFFFF;font-size:15px;font-weight:700">Alquilar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:{{d2}};flex-direction:column;border:1px solid #C4C6D0;border-radius:24px;background:#F3F3FA;overflow:hidden">
+      <div style="height:168px">
+        <svg viewBox="0 0 350 168" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Kayak con remo doble" role="img">
+          <rect width="350" height="168" fill="#ECF0FF"></rect>
+          <circle cx="175" cy="84" r="68" fill="#FFFFFF"></circle>
+          <path d="M22 84 C70 54 280 54 328 84 C280 114 70 114 22 84Z" fill="#F2A65A"></path>
+          <ellipse cx="175" cy="84" rx="38" ry="14" fill="#284777"></ellipse>
+          <path d="M104 30 L246 138" stroke="#191C20" stroke-width="6" stroke-linecap="round"></path>
+          <ellipse cx="96" cy="24" rx="8" ry="19" transform="rotate(-52 96 24)" fill="#191C20"></ellipse>
+          <ellipse cx="254" cy="144" rx="8" ry="19" transform="rotate(-52 254 144)" fill="#191C20"></ellipse>
+        </svg>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;padding:16px">
+        <div style="font-size:22px;font-weight:800;color:#191C20;line-height:1.15">Kayak</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <div style="font-size:16px;font-weight:700;color:#006874;white-space:nowrap">10 <span style="font-weight:500;color:#44474E">€/hora</span></div>
+          <div style="display:flex;gap:8px">
+            <a href="Detalle-Kayak.dc.html" style="display:flex;align-items:center;height:44px;padding:0 20px;box-sizing:border-box;border-radius:22px;background:#D6E3FF;color:#284777;font-size:15px;font-weight:700">Ver</a>
+            <a href="Alquilar.dc.html" style="display:flex;align-items:center;height:44px;padding:0 20px;box-sizing:border-box;border-radius:22px;background:#006874;color:#FFFFFF;font-size:15px;font-weight:700">Alquilar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <sc-if value="{{noResults}}" hint-placeholder-val="{{ false }}">
+      <div style="padding:32px 16px;text-align:center;font-size:16px;font-weight:500;color:#44474E">No hay artículos que coincidan con tu búsqueda.</div>
+    </sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1110}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menu: false, q: '' };
+  }
+  renderVals() {
+    const names = ['tabla de surf', 'tabla de paddle surf', 'kayak'];
+    const q = this.state.q.trim().toLowerCase();
+    const show = names.map((n) => !q || n.indexOf(q) !== -1);
+    return {
+      menuOpen: this.state.menu,
+      chevRot: this.state.menu ? 'rotate(180deg)' : 'rotate(0deg)',
+      toggleMenu: () => this.setState((st) => ({ menu: !st.menu })),
+      onSearch: (e) => this.setState({ q: e.target.value }),
+      d0: show[0] ? 'flex' : 'none',
+      d1: show[1] ? 'flex' : 'none',
+      d2: show[2] ? 'flex' : 'none',
+      noResults: !show[0] && !show[1] && !show[2]
+    };
+  }
+}
+</script>
+</body>
+</html>

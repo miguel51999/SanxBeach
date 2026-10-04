@@ -1,0 +1,110 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Alquilar.dc.html": {
+      "h": 1090,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Alquilar",
+      "w": 390,
+      "x": 2535,
+      "y": -107
+    },
+    "Alquiler.dc.html": {
+      "h": 1110,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Alquiler",
+      "w": 390,
+      "x": 655,
+      "y": -107
+    },
+    "Clases.dc.html": {
+      "h": 1320,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Clases",
+      "w": 390,
+      "x": 185,
+      "y": -107
+    },
+    "Detalle-Kayak.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Detalle – Kayak",
+      "w": 390,
+      "x": 2065,
+      "y": -107
+    },
+    "Detalle-Paddle.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Detalle – Tabla de paddle surf",
+      "w": 390,
+      "x": 1649,
+      "y": -107
+    },
+    "Detalle-Surf.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Detalle – Tabla de surf",
+      "w": 390,
+      "x": 1232,
+      "y": -171
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 32,
+      "title": "Inicio",
+      "w": 390,
+      "x": -281,
+      "y": -20
+    },
+    "Conocenos.dc.html": {
+      "x": 3005,
+      "y": -107,
+      "w": 390,
+      "h": 1010,
+      "title": "Conócenos",
+      "is_interactive": true,
+      "radius": 32
+    },
+    "Contactanos.dc.html": {
+      "x": 3475,
+      "y": -107,
+      "w": 390,
+      "h": 1070,
+      "title": "Contáctanos",
+      "is_interactive": true,
+      "radius": 32
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-04T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "file": "Main.dc.html",
+    "view": "focused"
+  },
+  "notes": {},
+  "order": [
+    "Main.dc.html",
+    "Clases.dc.html",
+    "Alquiler.dc.html",
+    "Detalle-Surf.dc.html",
+    "Detalle-Paddle.dc.html",
+    "Detalle-Kayak.dc.html",
+    "Alquilar.dc.html",
+    "Conocenos.dc.html",
+    "Contactanos.dc.html"
+  ],
+  "pages": [],
+  "title": "SanxBeach – Pantalla de inicio"
+}

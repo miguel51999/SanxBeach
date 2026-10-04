@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>SanxBeach – Conócenos</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Figtree',system-ui,sans-serif;}
+a{text-decoration:none;}
+</style>
+</helmet>
+<div style="position:relative;width:390px;height:1010px;box-sizing:border-box;padding:28px 20px 32px;display:flex;flex-direction:column;gap:20px;background:#F9F9FF;color:#191C20;font-family:'Figtree',system-ui,sans-serif;overflow:hidden">
+
+  <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:48px;position:relative;z-index:5;flex-shrink:0">
+    <a href="Main.dc.html" aria-label="Volver al inicio" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:22px;background:#E7E8EE;justify-self:start">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#191C20" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg>
+    </a>
+    <a href="Main.dc.html" aria-label="SanxBeach, inicio" style="font-size:28px;font-weight:800;letter-spacing:-0.5px;color:#415F91;line-height:1">Sanx<span style="color:#006874">Beach</span></a>
+    <div style="position:relative;justify-self:end">
+      <button onClick="{{toggleMenu}}" aria-expanded="{{menuOpen}}" aria-haspopup="true" style="display:flex;align-items:center;gap:8px;height:44px;padding:0 14px 0 16px;border:1px solid #74777F;border-radius:22px;background:#F9F9FF;color:#191C20;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer">
+        Menú
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#44474E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="transform:{{chevRot}};transition:transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;right:0;top:52px;width:200px;box-sizing:border-box;padding:8px;display:flex;flex-direction:column;gap:2px;background:#F3F3FA;border:1px solid #C4C6D0;border-radius:16px;box-shadow:0 6px 20px rgba(25,28,32,0.14)">
+          <a href="Main.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Inicio</a>
+          <a href="Clases.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Clases</a>
+          <a href="Alquiler.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Alquiler</a>
+          <a href="Conocenos.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;background:#D6E3FF;color:#284777;font-weight:700;font-size:15px">Conócenos</a>
+          <a href="Contactanos.dc.html" style="display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:12px;color:#191C20;font-weight:500;font-size:15px">Contáctanos</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+
+  <div style="position:relative;height:240px;flex-shrink:0;border-radius:28px;overflow:hidden;background:#D6E3FF">
+    <div style="position:absolute;inset:0;opacity:{{op0}};transition:opacity .6s">
+      <svg viewBox="0 0 350 240" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Familia disfrutando de un día de playa" role="img"><rect width="350" height="240" fill="#D6E3FF"></rect><circle cx="300" cy="40" r="22" fill="#FFFFFF"></circle><rect y="96" width="350" height="46" fill="#86ACF0"></rect><path d="M0 108 Q30 96 60 108 T120 108 T180 108 T240 108 T300 108 T360 108 V142 H0Z" fill="#5177B8"></path><rect y="140" width="350" height="100" fill="#EBD9A8"></rect><path d="M70 120 V200" stroke="#44474E" stroke-width="4"></path><path d="M20 128 Q70 72 120 128Z" fill="#F2A65A"></path><path d="M45 128 Q70 72 95 128Z" fill="#FFFFFF"></path><rect x="150" y="214" width="120" height="14" rx="4" fill="#006874"></rect><rect x="90.1" y="190.8" width="7.7" height="24.2" rx="3.3" fill="#284777"></rect><rect x="102.2" y="190.8" width="7.7" height="24.2" rx="3.3" fill="#284777"></rect><rect x="85.7" y="157.8" width="28.6" height="35.2" rx="11.0" fill="#415F91"></rect><circle cx="100" cy="146.8" r="13.2" fill="#F2C9A0"></circle><path d="M86.8 144.6 C86.8 127.0 113.2 127.0 113.2 144.6 C106.6 137.6 93.4 137.6 86.8 144.6Z" fill="#5B3A29"></path><circle cx="95.6" cy="147.9" r="1.7" fill="#191C20"></circle><circle cx="104.4" cy="147.9" r="1.7" fill="#191C20"></circle><path d="M95.6 152.3 Q100 156.7 104.4 152.3" fill="none" stroke="#191C20" stroke-width="1.8" stroke-linecap="round"></path>
+<rect x="139.2" y="191.6" width="8.4" height="26.4" rx="3.6" fill="#194683"></rect><rect x="152.4" y="191.6" width="8.4" height="26.4" rx="3.6" fill="#194683"></rect><rect x="134.4" y="155.6" width="31.2" height="38.4" rx="12.0" fill="#006874"></rect><circle cx="150" cy="143.6" r="14.4" fill="#C98E62"></circle><path d="M135.6 141.2 C135.6 122.0 164.4 122.0 164.4 141.2 C157.2 133.5 142.8 133.5 135.6 141.2Z" fill="#191C20"></path><circle cx="145.2" cy="144.8" r="1.8" fill="#191C20"></circle><circle cx="154.8" cy="144.8" r="1.8" fill="#191C20"></circle><path d="M145.2 149.6 Q150 154.4 154.8 149.6" fill="none" stroke="#191C20" stroke-width="1.9" stroke-linecap="round"></path>
+<rect x="205.7" y="192.6" width="4.9" height="15.4" rx="2.1" fill="#415F91"></rect><rect x="213.4" y="192.6" width="4.9" height="15.4" rx="2.1" fill="#415F91"></rect><rect x="202.9" y="171.6" width="18.2" height="22.4" rx="7.0" fill="#F2A65A"></rect><circle cx="212" cy="164.6" r="8.4" fill="#F6D5B3"></circle><path d="M203.6 163.2 C203.6 152.0 220.4 152.0 220.4 163.2 C216.2 158.7 207.8 158.7 203.6 163.2Z" fill="#C9772B"></path><circle cx="209.2" cy="165.3" r="1.0" fill="#191C20"></circle><circle cx="214.8" cy="165.3" r="1.0" fill="#191C20"></circle><path d="M209.2 168.1 Q212 170.9 214.8 168.1" fill="none" stroke="#191C20" stroke-width="1.1" stroke-linecap="round"></path>
+<rect x="242.8" y="192.4" width="5.6" height="17.6" rx="2.4" fill="#284777"></rect><rect x="251.6" y="192.4" width="5.6" height="17.6" rx="2.4" fill="#284777"></rect><rect x="239.6" y="168.4" width="20.8" height="25.6" rx="8.0" fill="#9EEFFD"></rect><circle cx="250" cy="160.4" r="9.6" fill="#8D5A3B"></circle><path d="M240.4 158.8 C240.4 146.0 259.6 146.0 259.6 158.8 C254.8 153.7 245.2 153.7 240.4 158.8Z" fill="#3B2A20"></path><circle cx="246.8" cy="161.2" r="1.2" fill="#191C20"></circle><circle cx="253.2" cy="161.2" r="1.2" fill="#191C20"></circle><path d="M246.8 164.4 Q250 167.6 253.2 164.4" fill="none" stroke="#191C20" stroke-width="1.3" stroke-linecap="round"></path>
+<rect x="290.6" y="198.9" width="7.4" height="23.1" rx="3.2" fill="#415F91"></rect><rect x="302.1" y="198.9" width="7.4" height="23.1" rx="3.2" fill="#415F91"></rect><rect x="286.4" y="167.4" width="27.3" height="33.6" rx="10.5" fill="#D6E3FF"></rect><circle cx="300" cy="156.9" r="12.6" fill="#F6D5B3"></circle><path d="M287.4 154.8 C287.4 138.0 312.6 138.0 312.6 154.8 C306.3 148.1 293.7 148.1 287.4 154.8Z" fill="#191C20"></path><circle cx="295.8" cy="157.9" r="1.6" fill="#191C20"></circle><circle cx="304.2" cy="157.9" r="1.6" fill="#191C20"></circle><path d="M295.8 162.1 Q300 166.3 304.2 162.1" fill="none" stroke="#191C20" stroke-width="1.7" stroke-linecap="round"></path>
+</svg>
+    </div>
+    <div style="position:absolute;inset:0;opacity:{{op1}};transition:opacity .6s">
+      <svg viewBox="0 0 350 240" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Grupo de personas en una clase en la playa" role="img"><rect width="350" height="240" fill="#9EEFFD"></rect><circle cx="52" cy="40" r="20" fill="#FFFFFF"></circle><rect y="100" width="350" height="50" fill="#70B6C0"></rect><path d="M0 114 Q30 100 60 114 T120 114 T180 114 T240 114 T300 114 T360 114 V150 H0Z" fill="#39818A"></path><rect y="148" width="350" height="92" fill="#EBD9A8"></rect><ellipse cx="64" cy="180" rx="8" ry="36" fill="#006874"></ellipse><path d="M64 152 V206" stroke="#9EEFFD" stroke-width="3" stroke-linecap="round"></path>
+<rect x="33.5" y="193.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="43.9" y="193.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="29.6" y="164.6" width="24.7" height="30.4" rx="9.5" fill="#F2A65A"></rect><circle cx="42" cy="155.1" r="11.4" fill="#F2C9A0"></circle><path d="M30.6 153.2 C30.6 138.0 53.4 138.0 53.4 153.2 C47.7 147.1 36.3 147.1 30.6 153.2Z" fill="#5B3A29"></path><circle cx="38.2" cy="156.0" r="1.4" fill="#191C20"></circle><circle cx="45.8" cy="156.0" r="1.4" fill="#191C20"></circle><path d="M38.2 159.8 Q42 163.7 45.8 159.8" fill="none" stroke="#191C20" stroke-width="1.5" stroke-linecap="round"></path>
+<ellipse cx="132" cy="186" rx="8" ry="36" fill="#FFFFFF"></ellipse><path d="M132 158 V212" stroke="#415F91" stroke-width="3" stroke-linecap="round"></path>
+<rect x="101.5" y="199.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="111.9" y="199.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="97.7" y="170.6" width="24.7" height="30.4" rx="9.5" fill="#006874"></rect><circle cx="110" cy="161.1" r="11.4" fill="#C98E62"></circle><path d="M98.6 159.2 C98.6 144.0 121.4 144.0 121.4 159.2 C115.7 153.1 104.3 153.1 98.6 159.2Z" fill="#191C20"></path><circle cx="106.2" cy="162.0" r="1.4" fill="#191C20"></circle><circle cx="113.8" cy="162.0" r="1.4" fill="#191C20"></circle><path d="M106.2 165.8 Q110 169.7 113.8 165.8" fill="none" stroke="#191C20" stroke-width="1.5" stroke-linecap="round"></path>
+<ellipse cx="200" cy="180" rx="8" ry="36" fill="#F2A65A"></ellipse><path d="M200 152 V206" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+<rect x="169.4" y="193.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="179.9" y="193.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="165.7" y="164.6" width="24.7" height="30.4" rx="9.5" fill="#415F91"></rect><circle cx="178" cy="155.1" r="11.4" fill="#F6D5B3"></circle><path d="M166.6 153.2 C166.6 138.0 189.4 138.0 189.4 153.2 C183.7 147.1 172.3 147.1 166.6 153.2Z" fill="#C9772B"></path><circle cx="174.2" cy="156.0" r="1.4" fill="#191C20"></circle><circle cx="181.8" cy="156.0" r="1.4" fill="#191C20"></circle><path d="M174.2 159.8 Q178 163.7 181.8 159.8" fill="none" stroke="#191C20" stroke-width="1.5" stroke-linecap="round"></path>
+<ellipse cx="268" cy="186" rx="8" ry="36" fill="#415F91"></ellipse><path d="M268 158 V212" stroke="#D6E3FF" stroke-width="3" stroke-linecap="round"></path>
+<rect x="237.4" y="199.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="247.9" y="199.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="233.7" y="170.6" width="24.7" height="30.4" rx="9.5" fill="#D97757"></rect><circle cx="246" cy="161.1" r="11.4" fill="#8D5A3B"></circle><path d="M234.6 159.2 C234.6 144.0 257.4 144.0 257.4 159.2 C251.7 153.1 240.3 153.1 234.6 159.2Z" fill="#3B2A20"></path><circle cx="242.2" cy="162.0" r="1.4" fill="#191C20"></circle><circle cx="249.8" cy="162.0" r="1.4" fill="#191C20"></circle><path d="M242.2 165.8 Q246 169.7 249.8 165.8" fill="none" stroke="#191C20" stroke-width="1.5" stroke-linecap="round"></path>
+<ellipse cx="336" cy="180" rx="8" ry="36" fill="#9EEFFD"></ellipse><path d="M336 152 V206" stroke="#006874" stroke-width="3" stroke-linecap="round"></path>
+<rect x="305.4" y="193.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="315.9" y="193.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="301.6" y="164.6" width="24.7" height="30.4" rx="9.5" fill="#284777"></rect><circle cx="314" cy="155.1" r="11.4" fill="#F2C9A0"></circle><path d="M302.6 153.2 C302.6 138.0 325.4 138.0 325.4 153.2 C319.7 147.1 308.3 147.1 302.6 153.2Z" fill="#5B3A29"></path><circle cx="310.2" cy="156.0" r="1.4" fill="#191C20"></circle><circle cx="317.8" cy="156.0" r="1.4" fill="#191C20"></circle><path d="M310.2 159.8 Q314 163.7 317.8 159.8" fill="none" stroke="#191C20" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+    </div>
+    <div style="position:absolute;inset:0;opacity:{{op2}};transition:opacity .6s">
+      <svg viewBox="0 0 350 240" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Personas navegando en kayak por la bahía" role="img"><rect width="350" height="240" fill="#ECF0FF"></rect><circle cx="290" cy="42" r="20" fill="#FFFFFF"></circle><path d="M0 100 L60 60 L120 100Z" fill="#86ACF0"></path><path d="M90 100 L170 50 L250 100Z" fill="#6B91D3"></path><rect y="98" width="350" height="142" fill="#5177B8"></rect><path d="M0 120 Q40 104 80 120 T160 120 T240 120 T320 120 T400 120 V240 H0Z" fill="#365E9D"></path><path d="M0 200 Q50 184 100 200 T200 200 T300 200 T400 200 V240 H0Z" fill="#194683"></path><rect x="85.0" y="142.0" width="26.0" height="30.0" rx="10.0" fill="#D6E3FF"></rect><circle cx="98" cy="138.0" r="12.0" fill="#F2C9A0"></circle><path d="M86.0 136.0 C86.0 120.0 110.0 120.0 110.0 136.0 C104.0 129.6 92.0 129.6 86.0 136.0Z" fill="#5B3A29"></path><circle cx="94.0" cy="139.0" r="1.5" fill="#191C20"></circle><circle cx="102.0" cy="139.0" r="1.5" fill="#191C20"></circle><path d="M94.0 143.0 Q98 147.0 102.0 143.0" fill="none" stroke="#191C20" stroke-width="1.6" stroke-linecap="round"></path>
+<rect x="125.0" y="142.0" width="26.0" height="30.0" rx="10.0" fill="#9EEFFD"></rect><circle cx="138" cy="138.0" r="12.0" fill="#C98E62"></circle><path d="M126.0 136.0 C126.0 120.0 150.0 120.0 150.0 136.0 C144.0 129.6 132.0 129.6 126.0 136.0Z" fill="#191C20"></path><circle cx="134.0" cy="139.0" r="1.5" fill="#191C20"></circle><circle cx="142.0" cy="139.0" r="1.5" fill="#191C20"></circle><path d="M134.0 143.0 Q138 147.0 142.0 143.0" fill="none" stroke="#191C20" stroke-width="1.6" stroke-linecap="round"></path>
+<path d="M60 168 Q118 200 190 168 Q118 182 60 168Z" fill="#F2A65A"></path><path d="M60 168 Q118 200 190 168" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+<rect x="251.6" y="182.0" width="20.8" height="24.0" rx="8.0" fill="#FFFFFF"></rect><circle cx="262" cy="178.8" r="9.6" fill="#F6D5B3"></circle><path d="M252.4 177.2 C252.4 164.4 271.6 164.4 271.6 177.2 C266.8 172.1 257.2 172.1 252.4 177.2Z" fill="#C9772B"></path><circle cx="258.8" cy="179.6" r="1.2" fill="#191C20"></circle><circle cx="265.2" cy="179.6" r="1.2" fill="#191C20"></circle><path d="M258.8 182.8 Q262 186.0 265.2 182.8" fill="none" stroke="#191C20" stroke-width="1.3" stroke-linecap="round"></path>
+<rect x="283.6" y="182.0" width="20.8" height="24.0" rx="8.0" fill="#F2A65A"></rect><circle cx="294" cy="178.8" r="9.6" fill="#8D5A3B"></circle><path d="M284.4 177.2 C284.4 164.4 303.6 164.4 303.6 177.2 C298.8 172.1 289.2 172.1 284.4 177.2Z" fill="#3B2A20"></path><circle cx="290.8" cy="179.6" r="1.2" fill="#191C20"></circle><circle cx="297.2" cy="179.6" r="1.2" fill="#191C20"></circle><path d="M290.8 182.8 Q294 186.0 297.2 182.8" fill="none" stroke="#191C20" stroke-width="1.3" stroke-linecap="round"></path>
+<path d="M232 202 Q276 226 330 202 Q276 212 232 202Z" fill="#006874"></path><path d="M232 202 Q276 226 330 202" fill="none" stroke="#9EEFFD" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M70 150 L170 214" stroke="#191C20" stroke-width="5" stroke-linecap="round"></path></svg>
+    </div>
+    <div style="position:absolute;left:16px;right:16px;bottom:12px;display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;height:36px;padding:0 16px;border-radius:18px;background:#F9F9FF;color:#191C20;font-size:15px;font-weight:700">{{slideLabel}}</div>
+      <div style="display:flex;align-items:center;gap:2px;padding:0 4px;border-radius:22px;background:#F9F9FF">
+        <sc-for list="{{dots}}" as="d" hint-placeholder-count="3">
+          <button onClick="{{ d.pick }}" aria-label="{{ d.label }}" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;background:transparent;cursor:pointer;padding:0">
+            <span style="{{ d.style }}"></span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;flex-direction:row;align-items:center;gap:16px">
+      <div style="width:140px;height:150px;flex-shrink:0;border-radius:20px;overflow:hidden">
+        <svg viewBox="0 0 140 150" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Equipo de monitores de SanxBeach" role="img"><rect width="140" height="150" fill="#D6E3FF"></rect><circle cx="108" cy="30" r="16" fill="#FFFFFF"></circle><rect y="118" width="140" height="32" fill="#EBD9A8"></rect><rect x="24.4" y="119.3" width="6.0" height="18.7" rx="2.5" fill="#284777"></rect><rect x="33.7" y="119.3" width="6.0" height="18.7" rx="2.5" fill="#284777"></rect><rect x="21.0" y="93.8" width="22.1" height="27.2" rx="8.5" fill="#006874"></rect><circle cx="32" cy="85.3" r="10.2" fill="#F2C9A0"></circle><path d="M21.8 83.6 C21.8 70.0 42.2 70.0 42.2 83.6 C37.1 78.2 26.9 78.2 21.8 83.6Z" fill="#5B3A29"></path><circle cx="28.6" cy="86.2" r="1.3" fill="#191C20"></circle><circle cx="35.4" cy="86.2" r="1.3" fill="#191C20"></circle><path d="M28.6 89.6 Q32 93.0 35.4 89.6" fill="none" stroke="#191C20" stroke-width="1.4" stroke-linecap="round"></path>
+<rect x="61.5" y="121.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="71.9" y="121.1" width="6.6" height="20.9" rx="2.8" fill="#284777"></rect><rect x="57.6" y="92.6" width="24.7" height="30.4" rx="9.5" fill="#006874"></rect><circle cx="70" cy="83.1" r="11.4" fill="#C98E62"></circle><path d="M58.6 81.2 C58.6 66.0 81.4 66.0 81.4 81.2 C75.7 75.1 64.3 75.1 58.6 81.2Z" fill="#191C20"></path><circle cx="66.2" cy="84.0" r="1.4" fill="#191C20"></circle><circle cx="73.8" cy="84.0" r="1.4" fill="#191C20"></circle><path d="M66.2 87.8 Q70 91.6 73.8 87.8" fill="none" stroke="#191C20" stroke-width="1.5" stroke-linecap="round"></path>
+<rect x="100.3" y="119.3" width="6.0" height="18.7" rx="2.5" fill="#284777"></rect><rect x="109.7" y="119.3" width="6.0" height="18.7" rx="2.5" fill="#284777"></rect><rect x="97.0" y="93.8" width="22.1" height="27.2" rx="8.5" fill="#006874"></rect><circle cx="108" cy="85.3" r="10.2" fill="#F6D5B3"></circle><path d="M97.8 83.6 C97.8 70.0 118.2 70.0 118.2 83.6 C113.1 78.2 102.9 78.2 97.8 83.6Z" fill="#C9772B"></path><circle cx="104.6" cy="86.2" r="1.3" fill="#191C20"></circle><circle cx="111.4" cy="86.2" r="1.3" fill="#191C20"></circle><path d="M104.6 89.6 Q108 93.0 111.4 89.6" fill="none" stroke="#191C20" stroke-width="1.4" stroke-linecap="round"></path>
+</svg>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+        <h2 style="margin:0;font-size:20px;font-weight:800;line-height:1.15;color:#191C20">Quiénes somos</h2>
+        <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#44474E">Somos un equipo de monitores y amantes del mar. Nacimos con una idea sencilla: que cualquiera, de cualquier edad, pueda disfrutar de la playa.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:row-reverse;align-items:center;gap:16px">
+      <div style="width:140px;height:150px;flex-shrink:0;border-radius:20px;overflow:hidden">
+        <svg viewBox="0 0 140 150" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Monitor enseñando a un niño con una tabla" role="img"><rect width="140" height="150" fill="#9EEFFD"></rect><rect y="40" width="140" height="48" fill="#70B6C0"></rect><rect y="108" width="140" height="42" fill="#EBD9A8"></rect><ellipse cx="94" cy="86" rx="9" ry="42" transform="rotate(14 94 86)" fill="#006874"></ellipse><rect x="31.0" y="118.0" width="7.0" height="22.0" rx="3.0" fill="#284777"></rect><rect x="42.0" y="118.0" width="7.0" height="22.0" rx="3.0" fill="#284777"></rect><rect x="27.0" y="88.0" width="26.0" height="32.0" rx="10.0" fill="#F2A65A"></rect><circle cx="40" cy="78.0" r="12.0" fill="#C98E62"></circle><path d="M28.0 76.0 C28.0 60.0 52.0 60.0 52.0 76.0 C46.0 69.6 34.0 69.6 28.0 76.0Z" fill="#191C20"></path><circle cx="36.0" cy="79.0" r="1.5" fill="#191C20"></circle><circle cx="44.0" cy="79.0" r="1.5" fill="#191C20"></circle><path d="M36.0 83.0 Q40 87.0 44.0 83.0" fill="none" stroke="#191C20" stroke-width="1.6" stroke-linecap="round"></path>
+<rect x="64.6" y="128.8" width="4.2" height="13.2" rx="1.8" fill="#284777"></rect><rect x="71.2" y="128.8" width="4.2" height="13.2" rx="1.8" fill="#284777"></rect><rect x="62.2" y="110.8" width="15.6" height="19.2" rx="6.0" fill="#415F91"></rect><circle cx="70" cy="104.8" r="7.2" fill="#F6D5B3"></circle><path d="M62.8 103.6 C62.8 94.0 77.2 94.0 77.2 103.6 C73.6 99.8 66.4 99.8 62.8 103.6Z" fill="#C9772B"></path><circle cx="67.6" cy="105.4" r="0.9" fill="#191C20"></circle><circle cx="72.4" cy="105.4" r="0.9" fill="#191C20"></circle><path d="M67.6 107.8 Q70 110.2 72.4 107.8" fill="none" stroke="#191C20" stroke-width="1.0" stroke-linecap="round"></path>
+</svg>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+        <h2 style="margin:0;font-size:20px;font-weight:800;line-height:1.15;color:#191C20">Clases para todos</h2>
+        <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#44474E">Clases de surf, paddle surf y kayak con monitores cercanos y grupos pequeños. Aprendes a tu ritmo, con seguridad y muchas risas.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:row;align-items:center;gap:16px">
+      <div style="width:140px;height:150px;flex-shrink:0;border-radius:20px;overflow:hidden">
+        <svg viewBox="0 0 140 150" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block" aria-label="Persona junto a un soporte con tablas de alquiler" role="img"><rect width="140" height="150" fill="#ECF0FF"></rect><rect y="124" width="140" height="26" fill="#EBD9A8"></rect><rect x="14" y="30" width="6" height="96" fill="#44474E"></rect><rect x="86" y="30" width="6" height="96" fill="#44474E"></rect><ellipse cx="34" cy="78" rx="9" ry="44" transform="rotate(8 34 78)" fill="#006874"></ellipse><ellipse cx="54" cy="78" rx="9" ry="44" transform="rotate(5 54 78)" fill="#415F91"></ellipse><ellipse cx="74" cy="80" rx="9" ry="44" transform="rotate(2 74 80)" fill="#F2A65A"></ellipse><rect x="104.3" y="121.3" width="6.0" height="18.7" rx="2.5" fill="#415F91"></rect><rect x="113.7" y="121.3" width="6.0" height="18.7" rx="2.5" fill="#415F91"></rect><rect x="101.0" y="95.8" width="22.1" height="27.2" rx="8.5" fill="#284777"></rect><circle cx="112" cy="87.3" r="10.2" fill="#F2C9A0"></circle><path d="M101.8 85.6 C101.8 72.0 122.2 72.0 122.2 85.6 C117.1 80.2 106.9 80.2 101.8 85.6Z" fill="#3B2A20"></path><circle cx="108.6" cy="88.2" r="1.3" fill="#191C20"></circle><circle cx="115.4" cy="88.2" r="1.3" fill="#191C20"></circle><path d="M108.6 91.6 Q112 95.0 115.4 91.6" fill="none" stroke="#191C20" stroke-width="1.4" stroke-linecap="round"></path>
+</svg>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+        <h2 style="margin:0;font-size:20px;font-weight:800;line-height:1.15;color:#191C20">Alquiler de material</h2>
+        <p style="margin:0;font-size:15px;font-weight:500;line-height:1.5;color:#44474E">Alquila tablas y kayaks en buen estado, por horas, y sal a navegar por tu cuenta. Te ayudamos a elegir el material que mejor se adapta a ti.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1010}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { slide: 0, menu: false };
+  }
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      this.setState((s) => ({ slide: (s.slide + 1) % 3 }));
+    }, 3000);
+  }
+  componentWillUnmount() {
+    if (this.timer) clearInterval(this.timer);
+  }
+  renderVals() {
+    const labels = ['Días de playa en familia', 'Clases en grupo', 'Aventura en kayak'];
+    const s = this.state.slide;
+    return {
+      op0: s === 0 ? 1 : 0,
+      op1: s === 1 ? 1 : 0,
+      op2: s === 2 ? 1 : 0,
+      slideLabel: labels[s],
+      menuOpen: this.state.menu,
+      chevRot: this.state.menu ? 'rotate(180deg)' : 'rotate(0deg)',
+      toggleMenu: () => this.setState((st) => ({ menu: !st.menu })),
+      dots: labels.map((l, i) => ({
+        label: 'Ver ' + l,
+        pick: () => this.setState({ slide: i }),
+        style: i === s
+          ? 'display:block;width:22px;height:8px;border-radius:4px;background:#415F91;transition:all .3s'
+          : 'display:block;width:8px;height:8px;border-radius:4px;background:#74777F;transition:all .3s'
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
